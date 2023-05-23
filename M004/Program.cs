@@ -162,6 +162,6 @@
 
 	enum Wochentag
 	{
-		Mo, Di, Mi, Do, Fr, Sa, So
+		Mo = 1, Di, Mi, Do, Fr, Sa, So
 	}
 }
