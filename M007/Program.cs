@@ -24,6 +24,24 @@
             Console.WriteLine(Fenster.Zaehler);
 			#endregion
 
+			#region Werte-/Referenztypen
+			//Wertetyp
+			//struct
+			//==, != werden die Inhalte verglichen
+			//Zuweisungen sind Kopien statt Referenzen
+			int original = 5;
+			int x = original; //Inhalt von original wird in x kopiert
+			original = 10; //original und x sind unabhängig voneinander
+
+			//Referenztyp
+			//class
+			//==, != werden die Speicheradressen verglichen
+			//Zuweisungen sind Referenzen anstatt Kopien
+			Fenster f5 = new Fenster();
+			Fenster f6 = f5; //Inhalt von f5 wird in f6 referenziert
+			f6.SetLaenge(9); //f5 und f6 werden verändert
+			#endregion
+
 			#region Null
 			//Null: leerer Wert, keine Referenz auf ein Objekt
 			Fenster f4; //Standardmäßig null (es hängt kein Wert daran)
