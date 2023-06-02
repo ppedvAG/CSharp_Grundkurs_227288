@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
 	<Grid>
 		<Button Content="Ein Button" HorizontalAlignment="Left" Margin="59,355,0,0" VerticalAlignment="Top" Height="35" Width="206" FontSize="16" Click="Button_Click"/>
-		<TextBlock x:Name="TB" HorizontalAlignment="Left" Margin="50,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="215" Background="#FF00B3FF" FontSize="24" TextAlignment="Center"/>
+		<TextBlock x:Name="TB" HorizontalAlignment="Left" Margin="50,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="298" Width="215" Background="#FF00B3FF" FontSize="24" TextAlignment="Center"/>
 		<ComboBox x:Name="CB" HorizontalAlignment="Left" Margin="344,46,0,0" VerticalAlignment="Top" Width="204" Height="38" SelectionChanged="ComboBox_SelectionChanged"/>
 		<ListBox x:Name="LB" Margin="367,123,276,151" SelectionChanged="LB_SelectionChanged_1" SelectionMode="Extended"/>
 		<CheckBox Content="Check 1" HorizontalAlignment="Left" Margin="377,314,0,0" VerticalAlignment="Top" IsChecked="False" Unchecked="CheckBox_Unchecked" Checked="CheckBox_Checked"/>
@@ -16,5 +16,6 @@
 		<RadioButton Content="RB2" HorizontalAlignment="Left" Margin="550,340,0,0" VerticalAlignment="Top" GroupName="abc"/>
 		<RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="551,362,0,0" VerticalAlignment="Top"/>
 		<Button Content="Neues Fenster" HorizontalAlignment="Left" Margin="586,112,0,0" VerticalAlignment="Top" Height="37" Width="175" Click="Button_Click_1"/>
+		<Button Content="Button" HorizontalAlignment="Left" Margin="583,173,0,0" VerticalAlignment="Top" Height="49" Width="166" Click="Button_Click_2"/>
 	</Grid>
 </Window>

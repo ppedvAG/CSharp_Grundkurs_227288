@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -54,5 +55,16 @@ public partial class MainWindow : Window
 		Window1 w1 = new Window1();
 		//w1.Show();
 		w1.ShowDialog();
+	}
+
+	private void Button_Click_2(object sender, RoutedEventArgs e)
+	{
+		Microsoft.Win32.OpenFileDialog ofd = new Microsoft.Win32.OpenFileDialog();
+		bool oeffnenGeklickt = ofd.ShowDialog() == true;
+		if (oeffnenGeklickt)
+		{
+			string filePath = ofd.FileName;
+			TB.Text = File.ReadAllText(filePath);
+		}
 	}
 }
